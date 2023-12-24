@@ -1,0 +1,350 @@
+#lyaout{
+    background-color: #f0f8ff;
+}
+
+
+/*----------------Seccção 1-------------------*/
+section header div img{
+    width: 30px;
+}
+section header nav a, section main div a{
+    color: #0099e3;
+    transition: 0.3s;
+}
+#menu a:hover{
+    color: #f0f8ff;
+    background-color: #0099e3;
+    padding: 4px;
+    box-shadow: 0px 0px 10px #0099e3;
+    border-radius: 5px;
+}
+#menu-mobile a:hover{
+    color: #f0f8ff;
+}
+/*Menu Mobile*/
+.menu-mobile, #btn-menu{
+    display: none;
+}
+.menu-mobile{
+    background-color: hsla(190, 61%, 65%, 0.098);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    backdrop-filter: blur(10px);
+    display: block;
+    border-radius: 0px 0px 15px 15px;
+    visibility: hidden;
+    transition: 0.4s;
+    overflow: hidden;
+}
+/*---------------Main--------------------*/
+section main h1, section main p{
+    color: #0099e3;
+    font-size: 70px;
+}
+section main p{
+    color: #0099e3;
+    font-size: 18px;
+}
+section main{
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+section main h1 span{
+    color: #f0f8ff;
+    background-color: #0099e3;
+    padding: 2px;
+    border-radius: 10px;
+}
+section main a{
+    color: #f0f8ff;
+    background-color: #0099e3;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+section main a:hover{
+    background-color: #0275ae;
+}
+section main div p{
+    color: #0099e3;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+
+/*----------------Seccção 2-------------------*/
+.logotipos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+.logotipos div {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: logotipo 20s linear infinite;
+}
+.logotipos div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    transform-origin: center;
+    transform: rotateY(calc(var(--i)*58deg)) translateZ(300px);
+    -webkit-box-reflect: below 0.5px linear-gradient(transparent, transparent, hsl(200, 100%, 45%));
+}
+.logotipos div span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes logotipo {
+    0%{
+        transform: perspective(1000px) rotatey(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+
+/*---------------- (cover e Flyers) -------------------*/
+.cover{
+    margin-top: 140px;
+    border-radius: 14px;
+}
+.cover_art, .flyer_art{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #0099e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.cover_art img, .flyer_art img{
+    width: 320px;
+    border-radius: 14px;
+}
+.cover_title, .flyer_title{
+    position: absolute;
+    bottom: -10px;
+    visibility: hidden;
+    border-radius: 14px;
+    background-color: white;
+    width: 290px;
+    height: 100px;
+    box-shadow: 0px 0px 10px #0000008a;
+    transition: 0.4s;
+}
+.cover_art:hover .cover_title{
+    bottom: -50px;
+    visibility: visible;
+}
+.flyer_art:hover .flyer_title{
+    bottom: -50px;
+    visibility: visible;
+}
+.cover_title h1, .flyer_title h1{
+    font-size: 20px;
+    color: #0099e3;
+}
+.flyer p{
+    text-align: justify;
+}
+.flyer_inf{
+    color: #0099e3;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+
+/*----------------Seccção 4-------------------*/
+.img-item{
+    width: 300px;
+    border-radius: 14px;
+}
+.ver_mais{
+    min-height: 90vh;
+}
+.cont_{
+    max-width: 1200px;
+    width: 95%;
+
+}
+.cont_ h1{
+    color: #0099e3;
+}
+.cont_ h1 span{
+    color: #f0f8ff;
+    background-color: #0099e3;
+    padding: 2px;
+    border-radius: 10px;
+}
+.cont_ .slide .img-list{
+    display: grid;
+    gap: 18px;
+    font-size: 0px;
+    overflow-x: auto;
+    margin-bottom: 10px;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+}
+.cont_ .slide .img-list .img_item{
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+}
+.cont_ .slide-scroll{
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/*-------------------Footer--------------------*/
+.img_4{
+    width: 500px;
+}
+.form div h3, .form div p{
+    color: #0099e3;
+}
+footer{
+    text-align: center;
+}
+footer div img{
+    width: 30px;
+    transition: 0.3s;
+}
+footer div ul{
+    list-style: none;
+}
+footer div ul li, footer div ul li a{
+    color: #0099e3;
+    font-size: 14px;
+}
+.midias a img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #f0f8ff68;
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    /*Menu Mobile*/
+    .menu{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .menu-mobile.abrir-menu{
+        visibility: visible;
+        height: 230px;
+    }
+    .menu-mobile a{
+        transition: 0.3s;
+        border: 1px solid transparent;
+        width: 100%;
+        margin-bottom: 4px;
+        font-size: 17px;
+        padding: 5px;
+        display: block;
+    }
+    .menu-mobile a:hover{
+        border: 1px solid hsla(200, 100%, 45%, 0.408);
+        background-color: hsla(200, 100%, 45%, 0.408);
+        width: 100%;
+    }
+    #btn-menu{
+        display: block;
+    }
+   /*btn-menu*/
+   section header button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+   }
+   .linha{
+    width: 30px;
+    height: 2px;
+    background-color: #0099e3;
+    display: block;
+    margin: 5px auto;
+    transform-origin: center;
+    border-radius: 1px;
+    transition: 0.3s;
+   }
+   section header button.ativar .linha:nth-child(1){
+    transform: translateY(1px) rotate(-40deg);
+    background-color: #ef5151;
+   }
+   section header button.ativar .linha:nth-child(2){
+    display: none;
+   }
+   section header button.ativar .linha:nth-child(3){
+    transform: translateY(-7px) rotate(40deg);
+    background-color: #ef5151;
+   } 
+    /*----------*/
+
+    /*----------------Seccção 2-------------------*/
+.logotipos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+.logotipos div {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: logotipo 20s linear infinite;
+}
+.logotipos div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    transform-origin: center;
+    transform: rotateY(calc(var(--i)*60deg)) translateZ(200px);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, hsl(200, 100%, 45%));
+}
+.logotipos div span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*-----------------------*/
+    .img_4{
+        width: 300px;
+        margin-top: 10px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}

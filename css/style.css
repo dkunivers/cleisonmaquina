@@ -1,0 +1,300 @@
+#lyaout{
+    background-color: #f0f8ff;
+}
+
+
+/*----------------Seccção 1-------------------*/
+section header div img{
+    width: 30px;
+}
+section header nav a, section main div a{
+    color: #0099e3;
+    transition: 0.3s;
+}
+#menu a:hover{
+    color: #f0f8ff;
+    background-color: #0099e3;
+    padding: 4px;
+    box-shadow: 0px 0px 10px #0099e3;
+    border-radius: 5px;
+}
+#menu-mobile a:hover{
+    color: #f0f8ff;
+}
+/*Menu Mobile*/
+.menu-mobile, #btn-menu{
+    display: none;
+}
+.menu-mobile{
+    background-color: hsla(190, 61%, 65%, 0.098);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    backdrop-filter: blur(10px);
+    display: block;
+    border-radius: 0px 0px 15px 15px;
+    visibility: hidden;
+    transition: 0.4s;
+    overflow: hidden;
+}
+/*---------------Main--------------------*/
+.img_1{
+    width: 330px;
+    animation-name: animation_1;
+    animation-duration: 4s;
+    animation-play-state: running;
+}
+.img_2{
+    width: 430px;
+}
+section main{
+    text-align: center;
+    animation-name: animation_2;
+    animation-duration: 4s;
+    animation-play-state: running;
+}
+section main div a:hover{
+    color: #f0f8ff;
+    background-color: #0099e3;
+    padding: 4px;
+    box-shadow: 0px 0px 10px #0099e3;
+    border-radius: 5px;
+}
+@keyframes animation_1{
+    0%{
+        margin-right: 200px;
+        opacity: 0;    
+    }
+    100%{
+        margin-right: 0px;
+        opacity: 1;    
+    }
+}
+@keyframes animation_2{
+    0%{
+        opacity: 0;    
+    }
+    100%{
+        opacity: 1;    
+    }    
+}
+/*----------------------------------------*/
+
+
+/*----------------Seccção 2-------------------*/
+#sobre_mim div h1{
+    color: #0099e3;
+}
+#sobre_mim div h1 span{
+    color: #f0f8ff;
+    background-color: #0099e3;
+    padding: 2px;
+    border-radius: 10px;
+}
+#sobre_mim div p{
+    text-align: justify;
+    font-size: 17px;
+    text-indent: 14px;
+}
+.perfil-p{
+    width: 400px;
+}
+.img_3{
+    width: 330px;
+}
+#sobre_mim{
+    text-align: center;
+}
+
+
+/*----------------Seccção 3-------------------*/
+#habilidades{
+    background-color: #0099e3;
+}
+#habilidades div article{
+    background-color: #f0f8ff;
+    border-radius: 23px;
+    width: 250px;
+    height: 250px;
+    transition: 0.3s;
+}
+#habilidades div article:hover{
+    box-shadow: 0px 0px 10px #f0f8ff68;
+    transform: scale(1.01);
+}
+#habilidades div article div img{
+    width: 50px;
+    text-align: center;
+}
+#habilidades div article h1{
+    color: #0099e3;
+    font-size: 25px;
+    margin-top: 8px;
+}
+#habilidades div article p{
+    color: #0099e3;
+    font-size: 10px;
+}
+#habilidades div article a{
+    color: #f0f8ff;
+    background-color: #0099e3;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+#habilidades div article a:hover{
+    background-color: #0275ae;
+}
+#formacoes h1{
+    color: #f0f8ff;
+}
+#formacoes h1 span{
+    color: #0099e3;
+    background-color: #f0f8ff;
+    padding: 2px;
+    border-radius: 10px;
+}
+.curso{
+    width: 340px;
+    height: 130px;
+    background-color: #f0f8ff;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+.curso:hover{
+    box-shadow: 0px 0px 10px #f0f8ff68;
+    transform: scale(1.01);
+}
+.curso div h2{
+    font-size: 17px;
+    color: #0099e3;
+}
+.curso div p{
+    color: #0099e3;
+    font-size: 10px;
+}
+.curso img{
+    width: 90px;
+}
+
+
+/*----------------Seccção 4-------------------*/
+.group img{
+    width: 100px;
+    height: 300px;
+    border-radius: 14px;
+    margin: 10px;
+    transition: 0.3s;
+}
+.group img:hover{
+    width: 300px;
+}
+
+/*-------------------Footer--------------------*/
+.img_4{
+    width: 500px;
+}
+.form div h3, .form div p{
+    color: #0099e3;
+}
+footer{
+    text-align: center;
+}
+footer div img{
+    width: 30px;
+    transition: 0.3s;
+}
+footer div ul{
+    list-style: none;
+}
+footer div ul li, footer div ul li a{
+    color: #0099e3;
+    font-size: 14px;
+}
+.midias a img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #f0f8ff68;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    /*Menu Mobile*/
+    .menu{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .menu-mobile.abrir-menu{
+        visibility: visible;
+        height: 230px;
+    }
+    .menu-mobile a{
+        transition: 0.3s;
+        border: 1px solid transparent;
+        width: 100%;
+        margin-bottom: 4px;
+        font-size: 17px;
+        padding: 5px;
+        display: block;
+    }
+    .menu-mobile a:hover{
+        border: 1px solid hsla(200, 100%, 45%, 0.408);
+        background-color: hsla(200, 100%, 45%, 0.408);
+        width: 100%;
+    }
+    #btn-menu{
+        display: block;
+    }
+   /*btn-menu*/
+   section header button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+   }
+   .linha{
+    width: 30px;
+    height: 2px;
+    background-color: #0099e3;
+    display: block;
+    margin: 5px auto;
+    transform-origin: center;
+    border-radius: 1px;
+    transition: 0.3s;
+   }
+   section header button.ativar .linha:nth-child(1){
+    transform: translateY(1px) rotate(-40deg);
+    background-color: #ef5151;
+   }
+   section header button.ativar .linha:nth-child(2){
+    display: none;
+   }
+   section header button.ativar .linha:nth-child(3){
+    transform: translateY(-7px) rotate(40deg);
+    background-color: #ef5151;
+   } 
+    /*----------*/
+
+    .img_2{
+        width: 310px;
+    }
+    .img_1{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .img_4{
+        width: 300px;
+        margin-top: 10px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
